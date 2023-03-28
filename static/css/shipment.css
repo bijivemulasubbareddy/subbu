@@ -1,0 +1,490 @@
+body{
+    /* background-image: url("http://www.shiftingwale.com/resources/images/blog/Best_Packers_And_Movers_For_ONGC_Household_Goods_and_Car_Transportation_ShiftingWale.jpg"); */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/414/102/original/cargo-logistics-transportation-concept-cargo-plane-train-truck-transport-on-a-background-of-the-world-map-import-export-global-freight-transportation-illustration-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+     overflow: hidden;
+    
+}
+
+
+.btn-get-started:hover{
+background: rgb(0, 0, 0);
+}
+
+.text{
+    color: black;
+}
+
+/* body {
+display: flex;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+font-family: "Open Sans", sans-serif;
+min-height: 100vh;
+overflow: hidden;
+
+
+
+
+} */
+
+.container {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+display: flex;
+/* border: 1px solid #babdc5; */
+--width: 78rem;
+--height: 590px;
+contain: strict;
+width: var(--width);
+block-size: var(--height);
+/* background-color: #ffffff; */
+background: url(/static/images/how-ship-international-package-B-1187991-Q421.webp) top center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+/* border-radius: 1em; */
+overflow-y: scroll;
+
+
+}
+
+.main__content {
+width: 140% !important;
+display: flex;
+flex-direction: column;
+transition: background-color 200ms cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.main--header,
+.main--footer {
+display: flex;
+align-items: center;
+height: 3rem;
+/* background-color: hsl(196, 60%, 40%); */
+}
+
+.nav__toggle--label {
+position: absolute;
+left: 1rem;
+top: 0.5rem;
+cursor: pointer;
+z-index: 10;
+}
+
+.nav__toggle {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 2rem;
+aspect-ratio: 1;
+color: #fff;
+font-size: 1.5em;
+}
+
+.text__content {
+display: flex;
+flex-direction: column;
+margin-inline: 0.5rem;
+padding-block: 0.5rem;
+}
+
+.section--title {
+margin: 30px 0 10px 0;
+font-size: 48px;
+font-weight: 700;
+line-height: 56px;
+text-transform: uppercase;
+color: #fff;
+text-align: center;
+}
+
+.text__content > p {
+max-width: 35ch;
+}
+
+.image--section {
+padding: 1rem 0.5rem;
+margin-top: auto;
+}
+
+img {
+display: block;
+max-width: 100%;
+object-fit: cover;
+border-radius: 0.65em;
+}
+
+[type="checkbox"] {
+display: none;
+}
+
+.sidebar {
+position: fixed;
+inset: 0;
+z-index: 900;
+transform: translateX(-100%);
+height: var(--height);
+width: 15rem;
+background: #fff;
+transition: opacity 250ms ease, transform 250ms;
+opacity: 0;
+/* background: #000000ad; */
+background: linear-gradient(45deg, rgb(245 205 81 / 17%) 0%, rgb(255 255 255) 100%);
+}
+
+.nav__toggle--input:checked ~ .sidebar {
+opacity: 1;
+transform: translateX(0);
+transition: opacity 300ms ease, transform 250ms ease;
+}
+
+/* body:has(:checked) .main__content {
+background-color: #0004;
+} */
+
+/* body:has(:checked) .sidebar {
+box-shadow: 5px 0 12px #0002;
+} */
+
+.sidebar--header {
+padding: 0.5rem;
+display: grid;
+place-content: stretch start;
+height: 8rem;
+background-color: hsl(195deg 100% 11%);
+}
+.avatar {
+display: inline-flex;
+align-self: flex-end;
+justify-content: center;
+width: 2.75rem;
+color: #ffffffb3;
+background-color: #0003;
+border-radius: 100%;
+margin-left: 5.5rem;
+}
+
+.avatar > i {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 2.5rem;
+aspect-ratio: 1;
+font-size: 2.75rem;
+}
+
+.user__info {
+align-self: flex-end;
+color: #fff;
+margin-left: 3.5rem;
+}
+
+.userName {
+font-size: 15px;
+}
+
+.userMail {
+font-size: 13.6px;
+}
+
+.navigation {
+z-index: 9999;
+display: flex;
+flex-direction: column;
+padding-block: 0.5rem;
+}
+
+.nav__item {
+padding-inline: 0.5rem;
+list-style: none;
+}
+
+.nav__link {
+display: grid;
+grid-auto-flow: column;
+place-items: center start;
+grid-template: 2.25rem / 2.25rem 1fr;
+gap: 1rem;
+color: #222;
+text-decoration: none;
+font-size: 15px;
+font-weight: 500;
+}
+
+.nav__link > i {
+display: inline-grid;
+place-content: center;
+aspect-ratio: 1;
+height: 100%;
+color: hsl(195, 10%, 45%);
+font-size: 1.25em;
+}
+
+.nav__item:hover .nav__link {
+background-color: #0002;
+}
+
+.nav__item:hover .nav__link > i {
+color: hsl(195, 70%, 45%);
+}
+
+.decorative__line--break {
+width: 95%;
+margin-inline: auto;
+}
+table{
+width:100%;
+table-layout: fixed;
+}
+.tbl-header{
+background-color: rgba(51, 76, 125, 0.3);
+}
+.tbl-content{
+height:450px;
+overflow-x:auto;
+margin-top: 0px;
+border: 1px solid rgba(255,255,255,0.3);
+}
+th{  
+padding: 20px 15px;
+background:rgb(54, 75, 97);
+text-align: left;
+font-size: 14px;
+font-weight: bold;
+color: #fff;
+text-transform:capitalize;
+border: 1px solid black;
+border: 1px solid rgb(242, 243, 247);
+font-family: Bookman Old Style;
+}
+td{
+padding: 15px;
+text-align: left;
+vertical-align:middle;
+font-weight:600;
+font-size: 14px;
+color: #fff;
+border-bottom: solid 1px rgba(255,255,255,0.1);
+border: 1px solid rgb(242, 243, 247);
+font-family: Bell MT;
+
+}
+
+
+    a{
+        text-decoration: none;
+    }
+
+    form{
+        margin-top: 2rem;
+    }
+  hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.drop-in {
+animation: drop-in 1s ease 200ms backwards;
+}
+
+.drop-in-2 {
+animation: drop-in 1200ms ease 500ms backwards;
+}
+
+@keyframes drop-in{
+from {
+opacity: 0;
+transform: translateY(-100px);
+}
+to {
+opacity: 1;
+transform: translate(0px);
+}
+}
+
+    /* body {
+animation: fadeInAnimation ease 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+overflow: hidden;
+} */
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+ }
+}
+    /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+/*=============== VARIABLES ===============*/
+
+:root {
+--accent-color: rgb(102, 57, 139);
+}
+
+/*=============== BASE ===============*/
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 16px;
+font-family: "Open Sans", sans-serif;
+color:black;
+}
+
+/* body {
+padding: 25px;
+/* background-image: url(https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80);
+background-size: cover;
+background-color: #29203f; */
+/* background: url(https://www.nextt.aero/globalassets/nextt/aircraft-journey/aircraft.jpg); 
+background-repeat: none;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
+} */
+
+h1 {
+font-size: 30px;
+text-align: center;
+margin-bottom: 10px;
+}
+
+#description {
+text-align: center;
+opacity: 80%;
+}
+
+h2,
+.title-label {
+font-weight: bold;
+}
+
+label {
+display: flex;
+align-items: center;
+}
+
+.container1 {
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+background: rgba(255, 255, 255, 0.068); 
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255, 255, 255, 0.048);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.479);
+padding: 50px;
+background-color: #967bc52e;
+}
+
+.input-box {
+position: relative;
+margin: 10px 0;
+padding-bottom: 20px;
+}
+
+.input-text {
+width: 100%;
+height: 2.375rem;
+padding: 0.375rem 0.75rem;
+margin-top: 0.5rem;
+color: black;
+background: #ffffffc2;
+/* backdrop-filter: blur(20px); */
+/* -webkit-backdrop-filter: blur(20px); */
+border: none;
+box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.068);
+}
+
+select option {
+color: var(--accent-color);
+}
+
+#radio-section {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-width: 450px;
+}
+
+#radio-section input {
+margin-right: 10px;
+}
+
+#checkbox-section {
+column-count: 2;
+column-gap: 20px;
+}
+
+.input-checkbox {
+padding: 5px 10px;
+}
+
+input {
+margin-right: 10px;
+accent-color: var(--accent-color);
+min-height: 1rem;
+min-width: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+opacity: 0.5;
+color:black;
+}
+
+#comment {
+height: 5rem;
+min-height: 2.5rem;
+}
+
+/*=============== BUTTON ===============*/
+
+#submit {
+width: 100%;
+height: 40px;
+background: rgba(255, 255, 255, 0.068);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.048);
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.192);
+transition-duration: 0.5s;
+background-color: #0090f9;
+}
+
+#submit:hover {
+background: rgba(255, 255, 255, 0.26);
+transition-duration: 0.5s;
+}
+
+/*=============== MEDIA QUERY ===============*/
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+/* body {
+padding: 20px;
+overflow: hidden;
+} */
+.container {
+padding: 20px;
+}
+#checkbox-section {
+column-count: 1;
+column-gap: 0px;
+}
+}
+

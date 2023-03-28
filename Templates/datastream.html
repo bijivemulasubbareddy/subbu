@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/css/datastream.css"> 
+    <link rel="stylesheet" href="/static/css/navbar.css"> 
+    <title>DataStream</title>
+  </head>
+
+  <header>
+    <! Try this in full page view for the best experience!>
+<div class="navigation">
+<ul>
+  <li class="list active">
+    <b></b>
+    <b></b>
+    <a href="/">
+      <span class="icon">
+        <ion-icon name="home-outline"></ion-icon>
+      </span>
+      <span class="title">Dashboard</span>
+    </a>
+  </li>
+  <li class="list">
+    <b></b>
+    <b></b>
+    <a href="/shipment">
+      <span class="icon">
+        <ion-icon name="person-outline"></ion-icon>
+      </span>
+      <span class="title">New Shipments</span>
+    </a>
+  </li>
+ 
+  <li class="list">
+    <b></b>
+    <b></b>
+    <a href="/shipment">
+      <span class="icon">
+        <ion-icon name="images-outline"></ion-icon>
+      </span>
+      <span class="title">CreateShipment</span>
+    </a>
+  </li>
+  <li class="list">
+    <b></b>
+    <b></b>
+    <a href="/Devicedata">
+      <span class="icon">
+        <ion-icon name="mail-outline"></ion-icon>
+      </span>
+      <span class="title">Device Data</span>
+    </a>
+  </li>
+  <li class="list">
+    <b></b>
+    <b></b>
+    <a href="/auth/login">
+      <span class="icon">
+        <ion-icon name="mail-outline"></ion-icon>
+      </span>
+      <span class="title">Logout</span>
+    </a>
+  </li>
+</ul>
+</div>
+<div class="toggle">
+<ion-icon name="menu-outline" class="open"></ion-icon>
+<ion-icon name="close-outline" class="close"></ion-icon>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</header>
+  <body>
+    <h2 style="text-align: center; color: black">Device Data Table</h2>
+
+    <table style="margin-left: 12%;">
+      <tr>
+        <th>Battery_Level</th>
+        <th>Device_Id</th>
+        <th>First_Sensor_temperature</th>
+        <th>Route_From</th>
+        <th>Route_To</th>
+      </tr>
+      {% for i in streaming_data %}
+      <tr>
+        <td>{{ i["Battery_Level"]}}</td>
+        <td>{{ i["Device_Id"]}}</td>
+        <td>{{ i["First_Sensor_temperature"]}}</td>
+        <td>{{ i["Route_From"]}}</td>
+        <td>{{ i["Route_To"]}}</td>
+      </tr>
+
+      {% endfor %}
+    </table>
+    <script src="/static/js/navbar.js"></script>
+  </body>
+</html>

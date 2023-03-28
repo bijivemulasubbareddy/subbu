@@ -1,0 +1,47 @@
+body{
+    /* background-image: url("http://www.shiftingwale.com/resources/images/blog/Best_Packers_And_Movers_For_ONGC_Household_Goods_and_Car_Transportation_ShiftingWale.jpg"); */
+    background-image: url("https://static.vecteezy.com/system/resources/previews/015/412/246/original/cargo-logistics-transportation-concept-cargo-ship-train-truck-transport-on-a-background-of-the-world-map-import-export-global-freight-transportation-illustration-vector.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-size: cover;
+}
+
+
+.btn-get-started {
+font-family: Poppins, sans-serif;
+text-transform: uppercase;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 1px;
+display: inline-block;
+color: rgb(255, 255, 255);
+padding: 8px 28px;
+border-radius: 50px;
+transition: all 0.5s ease 0s;
+margin: 10px;
+border-width: 2px;
+border-style: solid;
+border-color: rgb(255, 255, 255);
+border-image: initial;
+text-align: center;
+background: rgba(0, 0, 0, 0.426);
+}
+.btn-get-started:hover{
+background: rgb(0, 0, 0);
+}
+
+body {
+display: flex;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+font-family: "Open Sans", sans-serif;
+min-height: 100vh;
+padding: 2rem;
+
+}
+
+
+
+
+

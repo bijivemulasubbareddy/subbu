@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/Dashboard.css"> 
+    <title>SCMXpert</title>
+</head>
+<body>
+    <header>
+        <! Try this in full page view for the best experience!>
+  <div class="navigation">
+    <ul>
+      <li class="list active">
+        <b></b>
+        <b></b>
+        <a href="/">
+          <span class="icon">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="/shipment">
+          <span class="icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </span>
+          <span class="title">New Shipments</span>
+        </a>
+      </li>
+     
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="/show-shipment">
+          <span class="icon">
+            <ion-icon name="images-outline"></ion-icon>
+          </span>
+          <span class="title">CreateShipment</span>
+        </a>
+      </li>
+      <li class="list">
+        <b></b>
+        <b></b>
+        <a href="/Devicedata">
+          <span class="icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </span>
+          <span class="title">Device Data</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="toggle">
+    <ion-icon name="menu-outline" class="open"></ion-icon>
+    <ion-icon name="close-outline" class="close"></ion-icon>
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </header>
+  
+    <section id="hero">
+      <div class="container">
+          <label for="nav__toggle--input" class="nav__toggle--label">
+              <span class="nav__toggle">
+                  <i class="fas fa-bars"></i>
+              </span>
+          </label>
+          <main class="main__content">
+      
+              <header class="main--header"></header>
+              <article class="text__content" style="text-align: center;">
+                  {% if user %}
+                  <h1 class="section--title">Welcome to SCMxpert</h1>
+              
+                  <h2 style="
+                  color: rgb(32, 31, 30);">
+                      Hi {{user["Username"]}} ! You are logged in, you can access the private
+                      pages. 
+                      <div class="center" style="text-align: center;margin-top: 2.5rem;">
+                      <a href="/shipment" style=" text-decoration: none;background-color: black;" class="btn-get-started">Create Shipment</a>
+                      <a href="/Devicedata" style=" text-decoration: none;background-color: black;" class="btn-get-started">Devicedata</a>
+                      <a href="/auth/login" style=" text-decoration: none;background-color: black;" class="btn-get-started">Logout</a>
+                      </div>
+                  </h2>
+                  {% else %}
+                  <h1 id="title" class="drop-in" style="top: -9px;">SCMxpert</h1>
+                  <h2>You are NOT logged in :(</h2>
+                  <h4>
+                      Hello stranger. You are not logged. Please follow the link to login
+                  </h4>
+                  <div class="center" style="text-align: center;position: relative;top: 2rem;">
+                    <a href="/auth/login" style=" text-decoration: none;" class="btn-get-started">Login</a>
+                  </div>
+                  {% endif %}
+              </article>
+          </main>
+    
+        <script src="/static/js/navbar.js"></script>
+</body>
+</html>

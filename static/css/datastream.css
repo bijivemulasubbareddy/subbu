@@ -1,0 +1,28 @@
+body{
+  /* background-image: url("http://www.shiftingwale.com/resources/images/blog/Best_Packers_And_Movers_For_ONGC_Household_Goods_and_Car_Transportation_ShiftingWale.jpg"); */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/414/102/original/cargo-logistics-transportation-concept-cargo-plane-train-truck-transport-on-a-background-of-the-world-map-import-export-global-freight-transportation-illustration-vector.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   background-size: cover;
+}
+    table,
+    th,
+    td {
+      border: 2px solid black;
+      border-collapse: collapse;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  
